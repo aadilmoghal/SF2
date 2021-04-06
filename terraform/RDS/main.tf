@@ -11,9 +11,9 @@ resource "aws_db_instance" "prod" {
   db_subnet_group_name   = aws_db_subnet_group.default.name
   vpc_security_group_ids = var.vpc_security_group_ids
   skip_final_snapshot    = true
-  identifier = "terraform-project-prod"
+  identifier = "sfia-project-prod"
   tags = {
-      project = "terraform"
+      project = "SFIA2"
   }
 }
 
@@ -30,15 +30,15 @@ resource "aws_db_instance" "test" {
   db_subnet_group_name   = aws_db_subnet_group.default.name
   vpc_security_group_ids = var.vpc_security_group_ids
   skip_final_snapshot    = true
-  identifier = "terraform-project-test"
+  identifier = "sfia-project-test"
   tags = {
-      project = "terraform"
+      project = "SFIA2"
   }
 }
 resource "aws_db_subnet_group" "default" {
     name = "main"
     subnet_ids = [var.subnetA_id, var.subnetB_id]
     tags = {
-        project = "terraform"
+        project = "SFIA2"
     }
 }

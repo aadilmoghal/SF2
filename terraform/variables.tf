@@ -3,9 +3,9 @@ variable "AWS_REGION" {
 }
 
 variable "username"{
-  
+  type = string
 }
 
 variable "password"{
-  
+  type = string
 }

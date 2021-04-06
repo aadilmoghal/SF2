@@ -10,6 +10,14 @@ ingress {
     cidr_blocks = [var.open_internet]
 }
 
+    ingress {
+    from_port = 8080
+    to_port = 8080
+    protocol = "tcp"
+    cidr_blocks = [var.open_internet]
+  }
+
+
 ingress {
     from_port = 80
     to_port = 80
@@ -32,6 +40,6 @@ egress {
 }
 
 tags = {
-    project = "terraform"
+    project = "SFIA2"
 }
 }
