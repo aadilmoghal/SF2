@@ -15,7 +15,7 @@ module "security_group" {
 module "ec2_instances" {
     source = "./EC2"
     subnet_id = module.aws_vpc.public_subnetA_id
-    security_group_ids = [module.security_group.aws_wsg_id]
+    vpc_security_group_ids = [module.security_group.aws_wsg_id]
 }
 module "RDS_instances" {
     username               = var.username

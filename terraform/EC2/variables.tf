@@ -10,6 +10,6 @@ variable "subnet_id" {
     default = "null"
 }
 
-variable "security_group_ids" {
+variable "vpc_security_group_ids" {
     default = "null"
 }
