@@ -7,34 +7,34 @@ resource "aws_vpc" "vpc" {
     instance_tenancy = "default"
 
     tags = {
-        project = "terraform"
+        project = "SFIA2"
     }
 }
 
-resource "aws_subnet" "my_subnet" {
+resource "aws_subnet" "public_subnetA" {
     cidr_block = var.pub-snA-cidr-block
     availability_zone = data.aws_availability_zones.available.names[0]
     vpc_id = aws_vpc.vpc.id
     map_public_ip_on_launch = true
     tags = {
-        project = "terraform"
+        project = "SFIA2"
     }
 }
 
-resource "aws_subnet" "my_subnet_2" {
+resource "aws_subnet" "public_subnetB" {
     cidr_block = var.pub-snB-cidr-block
     availability_zone = data.aws_availability_zones.available.names[1]
     vpc_id = aws_vpc.vpc.id
     map_public_ip_on_launch = true
     tags = {
-        project = "terraform"
+        project = "SFIA2"
     }
 }
 resource "aws_internet_gateway" "vpc_igw" {
         vpc_id = aws_vpc.vpc.id
 
          tags = {
-            project = "terraform"
+            project = "SFIA2"
     }
 }
 resource "aws_route_table" "vpc_rt" {
@@ -46,14 +46,14 @@ resource "aws_route_table" "vpc_rt" {
         }
 
         tags = {
-            project = "terraform"
+            project = "SFIA2"
         }
     }
 resource "aws_route_table_association" "pub_subA_rta" {
-    subnet_id       = aws_subnet.my_subnet.id
+    subnet_id       = aws_subnet.public_subnetA.id
     route_table_id  = aws_route_table.vpc_rt.id 
 }
 resource "aws_route_table_association" "pub_subB_rta" {
-    subnet_id       = aws_subnet.my_subnet_2.id
+    subnet_id       = aws_subnet.public_subnetB.id
     route_table_id  = aws_route_table.vpc_rt.id 
 }
