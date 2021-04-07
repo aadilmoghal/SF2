@@ -11,33 +11,3 @@ jenkins:
   vars:
   ansible_user: ubuntu
   ansible_ssh_private_key_file: '~/.ssh/aws-key.pem'
-
-
-
-
-# all:
-#   hosts:
-#     3.10.205.80:
-#     ansible_user: ubuntu
-#     ansible_ssh_private_key_file: '~/.ssh/aws-key.pem'
-#   children:
-#     jenkins:
-#       hosts:
-#         35.177.32.99:
-#         ansible_user: ubuntu
-#         ansible_ssh_private_key_file: '~/.ssh/aws-key.pem'
-
-
-# all:
-# hosts:
-# 18.130.103.115:
-# vars:
-# ansible_user: ubuntu
-# ansible_ssh_private_key_file: '~/.ssh/aws-key.pem'
-     
-# jenkins:
-# hosts:
-# 35.178.245.235:
-# vars:
-
-     
