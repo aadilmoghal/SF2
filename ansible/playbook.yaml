@@ -1,0 +1,28 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: installing mysql
+      script: /home/ubuntu/SF2/scripts/mysql-installation.sh
+
+    - name: installing pytest
+      script: /home/ubuntu/SF2/scripts/pytest-installation.sh
+
+    - name: installing docker
+      script: /home/ubuntu/SF2/scripts/docker-installation.sh
+
+    - name: installing docker compose
+      script: /home/ubuntu/SF2/scripts/docker-compose-installation.sh
+
+
+- hosts: jenkins
+  become: true
+  tasks:
+    - name: insalling Jenkins
+      script: /home/ubuntu/SF2/scripts/jenkins-installation.sh
+
+    - name: installing awscli
+      script: /home/ubuntu/SF2/scripts/awscli-installation.sh
+
+    - name: installing kubernetes
+      script: /home/ubuntu/SF2/scripts/kubernetes-installation.sh
