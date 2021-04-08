@@ -9,7 +9,7 @@ cd SF2/
 
 git checkout kubernetes
 
-docker-compose up -d --build
+sudo docker-compose up -d --build
 
 docker-compose down
 
