@@ -6,10 +6,10 @@ cd SF2/
 
 git checkout kubernetes
 
+sudo docker login
+
 sudo docker build backend -t aadilmoghal/backend
 sudo docker build frontend -t aadilmoghal/frontend
-
-sudo docker image ls
 
 sudo docker push aadilmoghal/frontend:latest
 
