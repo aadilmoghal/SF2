@@ -6,8 +6,8 @@ cd SF2/
 
 git checkout kubernetes
 
-sudo docker push aadilmoghal/frontend
+sudo docker push aadilmoghal/frontend:latest
 
-sudo docker push aadilmoghal/backend
+sudo docker push aadilmoghal/backend:latest
 
 EOF
