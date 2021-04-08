@@ -4,6 +4,7 @@ pipeline {
     stage('Building') {
       steps {
         // sh 'chmod +x ./jenkins-scripts/setup.sh'
+        sh "echo ${SECRET_KEY}"
         sh './jenkins-scripts/setup.sh'
       }
     }
