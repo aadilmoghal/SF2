@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: aadil/backend:latest
+        image: aadilmoghal/backend:latest
         ports:
         - containerPort: 5001

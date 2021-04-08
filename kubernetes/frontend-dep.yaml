@@ -17,6 +17,6 @@ spec:
   replicas: 3
   containers:
   - name: frontend
-    image: aadil/frontend:latest
+    image: aadilmoghal/frontend:latest
     ports:
     - containerPort: 5000
