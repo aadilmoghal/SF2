@@ -9,6 +9,8 @@ git checkout kubernetes
 sudo docker build backend -t aadilmoghal/backend
 sudo docker build frontend -t aadilmoghal/frontend
 
+docker image ls
+
 sudo docker push aadilmoghal/frontend:latest
 
 sudo docker push aadilmoghal/backend:latest
