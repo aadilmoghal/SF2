@@ -11,6 +11,6 @@ git checkout kubernetes
 
 sudo docker-compose up -d --build
 
-docker-compose down
+sudo docker-compose down
 
 EOF
