@@ -9,6 +9,8 @@ cd SF2/
 
 git checkout kubernetes
 
+docker exec backend bash -c "pytest tests/ --cov application" >>
+docker exec frontend bash -c "pytest tests/ --cov application" >> 
 
 docker-compose up -d --build
 
