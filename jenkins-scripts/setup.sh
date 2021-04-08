@@ -1,5 +1,5 @@
 #!/bin/bash
-ssh -i ~/.ssh/id_rsa ubuntu@3.10.205.80 << EOF
+ssh -i ~/.ssh/id_rsa ubuntu@18.133.226.200 << EOF
 
 sudo rm -r SF2
 
