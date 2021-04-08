@@ -19,5 +19,5 @@ services:
       protocol: tcp
     environment: 
       SECRET_KEY: credentials('SECRET_KEY')
-      DATABASE_URI: ${DATABASE_URI}
+      DATABASE_URI: credentials{'DATABASE_URI'}
       TEST_DATABASE_URI: credentials{'TEST_DATABASE_URI'}
