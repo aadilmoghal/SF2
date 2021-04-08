@@ -1,5 +1,6 @@
 #!/bin/bash
-ssh -i /home/jenkins/.ssh/id_rsa ubuntu@3.10.205.80 << EOF
+chmod 400 ~/.ssh/id_rsa
+ssh -i ~/.ssh/id_rsa ubuntu@3.10.205.80 << EOF
 
 sudo rm -r SF2
 
