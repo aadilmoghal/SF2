@@ -12,7 +12,7 @@ pipeline {
     }
     stage('Pushing') {
       steps {
-        // sh 'chmod +x ./jenkins-scripts/push.sh'
+        sh 'chmod +x ./jenkins-scripts/push.sh'
         sh './jenkins-scripts/push.sh'
       }
     }
