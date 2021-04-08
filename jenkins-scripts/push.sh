@@ -7,7 +7,7 @@ cd SF2/
 git checkout kubernetes
 
 cd frontend
-sudo docker push aadilmoghal/front_end
+sudo docker push aadilmoghal/front_end:new
 
 cd ..
 
