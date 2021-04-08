@@ -1,10 +1,12 @@
 pipeline {
   agent any
+  environment{
+    SECRET_KEY=credentials('SECRET_KEY')
+  }
   stages {
     stage('Building') {
       steps {
         // sh 'chmod +x ./jenkins-scripts/setup.sh'
-        sh "echo ${SECRET_KEY}"
         sh './jenkins-scripts/setup.sh'
       }
     }
