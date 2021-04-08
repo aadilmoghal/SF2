@@ -1,4 +1,4 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: sfia2-namespaces
+  name: sfia2-namespace
