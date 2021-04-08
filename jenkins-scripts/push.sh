@@ -7,12 +7,12 @@ cd SF2/
 git checkout kubernetes
 
 cd frontend
-sudo docker push aadilmoghal/front_end:latest
+sudo docker push aadilmoghal/front_end
 
 cd ..
 
 cd backend
 
-sudo docker push aadilmoghal/back_end:latest
+sudo docker push aadilmoghal/back_end
 
 EOF
