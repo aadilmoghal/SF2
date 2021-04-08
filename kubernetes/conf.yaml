@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: nginx-config
-  namespace: SFIA2-Namespace
+  namespace: sfia2-namespace
 data:
   nginx.conf:
     server {

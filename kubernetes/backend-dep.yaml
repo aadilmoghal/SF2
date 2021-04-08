@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend
-  namespace: SFIA2-Namespace
+  namespace: sfia2-namespace
   labels:
     app: SFIA2
 spec:

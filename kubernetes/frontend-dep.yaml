@@ -4,7 +4,7 @@ metadata:
   name: frontend
   labels:
     app: SFIA2
-  namespace: SFIA2-Namespace
+  namespace: sfia2-namespace
 spec:
   selector:
     matchLabels:
