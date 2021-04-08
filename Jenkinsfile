@@ -3,17 +3,17 @@ pipeline {
   stages {
     stage('Building') {
       steps {
-        sh 
+        sh './jenkins-scripts/setup.sh'
       }
     }
-    stage('Testing') {
+    stage('Pushing') {
       steps {
-        sh 
+        sh './jenkins-scripts/push.sh'
       }
     }
     stage('Deployments') {
       steps {
-        sh 
+        sh './jenkins-scripts/dep.sh'
       }
     }
   }
