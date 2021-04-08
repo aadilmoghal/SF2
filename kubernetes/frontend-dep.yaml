@@ -9,12 +9,12 @@ spec:
   selector:
     matchLabels:
       app: SFIA2
+  replicas: 3
   template:
     metadata:
       labels:
         app: SFIA2
     spec:
-      replicas: 3
       containers:
       - name: frontend
         image: aadilmoghal/frontend:latest
