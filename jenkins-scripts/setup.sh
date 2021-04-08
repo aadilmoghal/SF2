@@ -5,6 +5,8 @@ sudo rm -r SF2
 
 git clone https://github.com/aadilmoghal/SF2.git
 
+git checkout kubernetes
+
 cd SF2/
 
 docker-compose up -d --build
