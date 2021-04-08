@@ -13,10 +13,10 @@ spec:
     metadata:
       labels:
         app: SFIA2
-spec:
-  replicas: 3
-  containers:
-  - name: frontend
-    image: aadilmoghal/frontend:latest
-    ports:
-    - containerPort: 5000
+    spec:
+      replicas: 3
+      containers:
+      - name: frontend
+        image: aadilmoghal/frontend:latest
+        ports:
+        - containerPort: 5000
