@@ -2,7 +2,7 @@
 
 # kubectl delete all --all -n SFIA2
 cd ../kubernetes/
-# kubectl delete pods --all -n sfia2-namespace
+kubectl delete pods --all -n sfia2-namespace
 kubectl apply -f ns.yaml
 kubectl apply -f conf.yaml
 kubectl create -f load-balancer.yaml 

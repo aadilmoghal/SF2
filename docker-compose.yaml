@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.8"
 services:
   frontend:
     build: ./frontend
@@ -19,5 +19,5 @@ services:
       protocol: tcp
     environment: 
       SECRET_KEY: ${SECRET_KEY}
-      DATABASE_URI: credentials{'DATABASE_URI'}
-      TEST_DATABASE_URI: credentials{'TEST_DATABASE_URI'}
+      DATABASE_URI: ${DATABASE_URI}
+      TEST_DATABASE_URI: ${TEST_DATABASE_URI}
