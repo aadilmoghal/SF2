@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # kubectl delete all --all -n SFIA2
-cd ../kubernetes/
+cd kubernetes/
 kubectl delete pods --all -n sfia2-namespace
 kubectl apply -f ns.yaml
 kubectl apply -f conf.yaml
