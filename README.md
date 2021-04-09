@@ -70,7 +70,9 @@ The frontend service serving up a simple HTML (index.html) to display the result
 
 # General Approach<a name="General_Approach"></a> 
 
-My approach is to create a food basket that allows users to insert the name of their favourite food to their basket and find out how much the total of the entire basket will be. The application will allow users to add delete and edit their basket if they decide to change a few items.
+I will be using Terraform to create a Test and Jenkins Machine through AWS and use Ansible to allow required applications to be installed in the virtual machines that I want.
+
+I will then create a pipeline using Jenkins to clone the repo in order to aquire the latest scripts, upload the image created to Dockerhub and then deploy using Kubernetes 
 
 # Infrastructure
 ![](https://i.imgur.com/AVSTz9J.png)
