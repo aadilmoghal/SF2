@@ -9,8 +9,8 @@ cd SF2/
 
 sudo docker-compose up -d --build
 
-docker exec backend bash -c "pytest tests/ --cov application" >>
-docker exec frontend bash -c "pytest tests/ --cov application" >>
+sudo docker exec backend bash -c "pytest tests/ --cov application" 
+sudo docker exec frontend bash -c "pytest tests/ --cov application"
 
 sudo docker-compose down
 
