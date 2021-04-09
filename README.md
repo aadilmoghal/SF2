@@ -22,11 +22,11 @@
 
 The application must:
 
-* Be deployed to a Virtual Machine for testing
+* Be deployed to a Virtual Machine for testing.
 
-* Be deployed in a managed Kubernetes Cluster for production
+* Be deployed in a managed Kubernetes Cluster for production.
 
-* Make use of a managed Database solution
+* Make use of a managed Database solution.
 
 
 # Technologies
@@ -72,7 +72,7 @@ The frontend service serving up a simple HTML (index.html) to display the result
 
 I will be using Terraform to create a Test and Jenkins Machine through AWS and use Ansible to allow required applications to be installed in the virtual machines that I want.
 
-I will then create a pipeline using Jenkins to clone the repo in order to aquire the latest scripts, upload the image created to Dockerhub and then deploy using Kubernetes 
+I will then create a pipeline using Jenkins to clone the repo in order to aquire the latest scripts, upload the image created to Dockerhub and then deploy using Kubernetes.
 
 # Infrastructure
 ![](https://i.imgur.com/AVSTz9J.png)
